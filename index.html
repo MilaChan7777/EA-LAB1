@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: pink;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        button{
+            outline: none;
+            border-radius: 7px;
+            border: none;
+            background-color: pink;
+            color: white;
+            font-size: 15px;
+            padding: 10px 22px;
+            cursor: pointer;
+        }
+        .kittens{
+            border: 7px solid pink;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .puppys{
+            border: 7px solid pink;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        img{
+            width: 300px;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 20px solid pink;
+        }
+        .anime{
+            border: 7px solid pink;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        input{
+            outline: none;
+            border: 2px solid pink;
+            padding: 7px 10px;
+            border-radius: 7px;
+        }
+        #anime-type{
+            outline: none;
+            border: 2px solid pink;
+            padding: 6px 9px;
+            border-radius: 7px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <section class="kittens">
+    <h1>Get information about Kittens</h1>
+    <button id="fetchkitty-button">Kittens facts</button>
+    <div id="data-container"></div>
+   </section>
+
+    <section class="puppys">
+        <h1>Get a puppy image!</h1>
+        <button id="fetchdog-button">Puppy image</button>
+        <div id="data-container2"></div>
+    </section>
+
+    <section class="anime">
+        <h1> Search for anime </h1>
+        <form id="search-form" class="anime-form">
+        <input type="text" id="anime-name" placeholder="Anime name">
+        <select id="anime-type">
+            <option value="">Type</option>
+            <option value="tv">TV</option>
+            <option value="movie">Movie</option>
+            <option value="ova">OVA</option>
+            <option value="special">Special</option>
+            <option value="ona">ONA</option>
+        </select>
+        <input type="number" id="anime-limit" placeholder="Limit" min="1" max="100">
+        <button type="submit">Search</button>
+        </form>
+        <div id="anime-results"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
